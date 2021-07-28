@@ -28,7 +28,7 @@ print BOLD CYAN<<EOTEXT;
   ▕╰╯┈┗┛┗┛┈╭╮▕╮┈▏
 Made by Marcos Murphy#0001                              		   
 EOTEXT
-print BOLD CYAN "IP: $ip\nPORTA: " . ($port ? $port : "ALEATORIA") . "\nTHREADS: " . ($size ? "$size-MEGA-BYTES" : "ALEATORIO") . "\nTEMPO: " . ($time ? "$time-SEGUNDOS" | "");
+print BOLD CYAN "IP: $ip\nPORTA: " . ($port ? $port : "ALEATORIA") . "\nTHREADS: " . ($size ? "$size-MEGA-BYTES" : "ALEATORIO") . "\nTEMPO: " . ($time ? "$time-SEGUNDOS" | "") . "\n";
 print BOLD CYAN "\nPARA PARAR APERTE CONTROL-C" unless $time;
  
 for (;time() <= $endtime;) {
